@@ -1,0 +1,162 @@
+/* Estilo general del body */
+body {
+    font-family: 'Roboto', sans-serif;  /* Cambio a una fuente más moderna */
+    scroll-behavior: smooth;
+    background-color: #fff;  /* Fondo blanco para el cuerpo */
+    color: #333;  /* Texto oscuro para mejor contraste */
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #ff6347;  /* Naranja cálido para navbar */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  /* Sombra sutil para profundidad */
+}
+
+.navbar .nav-link, .navbar-brand {
+    color: #fff !important;
+    font-weight: 600;  /* Texto en negrita para los links */
+    letter-spacing: 1px;  /* Espaciado para darle un toque moderno */
+}
+
+.navbar .nav-link:hover {
+    color: #fff !important;
+    background-color: #ff4500;  /* Naranja más oscuro para hover */
+    text-decoration: none;  /* Elimina el subrayado */
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://source.unsplash.com/1600x900/?technology') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 120px 0;  /* Más espacio arriba y abajo para resaltar */
+    text-align: center;
+    background-position: center;
+    position: relative;  /* Para agregar sombra de fondo */
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);  /* Fondo oscuro para mejor contraste del texto */
+    z-index: -1;
+}
+
+.hero h1 {
+    font-size: 3.2rem;  /* Aumentar tamaño del título */
+    font-weight: 700;  /* Resaltar el título */
+}
+
+.hero p {
+    font-size: 1.5rem;  /* Tamaño de texto más grande */
+    font-weight: 300;  /* Menos peso en el texto descriptivo */
+}
+
+/* Animación de aparición */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Estilo de botones */
+.btn-custom-green {
+    background-color: #28a745;  /* Verde brillante */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 30px;  /* Bordes redondeados para un look más moderno */
+    font-size: 1rem;
+    font-weight: 600;  /* Peso de fuente para mayor impacto */
+    transition: background-color 0.3s ease;
+}
+
+.btn-custom-green:hover {
+    background-color: #218838;  /* Verde más oscuro para el hover */
+}
+
+/* Estilo para las tarjetas */
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;  /* Línea fina para las tarjetas */
+    border-radius: 8px;  /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);  /* Sombra suave */
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);  /* Aumenta la sombra al hacer hover */
+}
+
+.card-body {
+    padding: 20px;  /* Espacio interno adecuado */
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #666;  /* Gris claro para el texto en las tarjetas */
+}
+
+/* Estilo de botones secundarios */
+.btn-secondary {
+    background-color: #00bcd4;  /* Azul brillante */
+    color: white;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #008c9e;  /* Azul más oscuro para el hover */
+}
+
+/* Efecto de transición suave en enlaces */
+a {
+    color: #ff6347;  /* Naranja cálido */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ff4500;  /* Naranja más oscuro para hover */
+    text-decoration: underline;
+}
+
+/* Secciones */
+section {
+    background-color: #fff;  /* Fondo blanco para todas las secciones */
+    padding: 60px 0;  /* Padding para dar espacio a las secciones */
+}
+
+/* Títulos de las secciones */
+h2, h3 {
+    color: #ff6347;  /* Naranja para los encabezados de sección */
+    font-weight: 700;
+    font-size: 2.5rem;  /* Tamaño grande para resaltar */
+    text-align: center;
+    margin-bottom: 30px;  /* Separación debajo del título */
+}
+
+/* Para los párrafos en las secciones */
+section p {
+    font-size: 1.1rem;
+    color: #333;
+    text-align: center;  /* Alineación centrada para el texto */
+    line-height: 1.6;  /* Mejor espaciado entre líneas */
+}
